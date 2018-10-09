@@ -1,0 +1,53 @@
+// 热门教材和推荐课程
+#s-recommended-course,
+#s-popular-textbook {
+  width: 1190px;
+  height: 580px;
+  margin: 0 auto;
+  overflow: hidden;
+  dl {
+    dt {
+      height: 30px;
+      h3 {
+        float: left;
+        font: 22px/1 '微软雅黑';
+        padding-left: 16px;
+        border-left: 6px solid #2db0f9;
+      }
+      a {
+        float: right;
+        font: 14px/1 '微软雅黑';
+        color: #3598db;
+      }
+    }
+    dd {
+      width: 210px;
+      height: 260px;
+      margin: 14px;
+      float: left;
+      img {
+        width: 210px;
+        height: 183px;
+      }
+      h4 {
+        margin-top: 5px;
+        font: 14px/24px '微软雅黑';
+      }
+    }
+  }
+}
+
+#s-recommended-course {
+  margin-top: 20px;
+}
+
+#footer {
+  height: 95px;
+  background: #373a43;
+  color: #fff;
+  clear: both;
+  p {
+    padding-top: 45px;
+    text-align: center;
+  }
+}

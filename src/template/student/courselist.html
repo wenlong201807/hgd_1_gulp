@@ -1,0 +1,12 @@
+<!-- 课程列表 -->
+<ul>
+  {{each arr['rows'] as value}}
+  <li class="fl">
+      <a href="s-coursedetail.html">
+        <img src="{{value.imgUrl}}">
+      </a>
+      <p>{{value.title}}</p>
+      <h6>{{value.author}}</h6>
+  </li>
+  {{/each}}
+</ul>

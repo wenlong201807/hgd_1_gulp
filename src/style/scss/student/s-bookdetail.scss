@@ -1,0 +1,119 @@
+.s-course {
+  padding: 30px;
+  width: 1160px;
+  margin: 0 auto;
+  height: 320px;
+  border: 2px solid #e5e5e5;
+  overflow: hidden;
+ 
+  .imgfl{
+    width: 370px;
+    display: inline-block;
+    overflow: hidden;
+    img {
+      height: 320px;
+      border: 1px solid #ccc;
+    }
+  }
+ 
+  .texmes {
+    width: 730px;
+    margin-left: 30px;
+    h3 {
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    h4{
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      font: 14px/1' 微软雅黑';
+      span{
+        color: #e7594d;
+      }
+    }
+    ul{
+      padding-top: 20px;
+      li{
+        height: 36px;
+        span{
+          display: inline-block;
+          width: 275px;
+          height: 36px;;
+        }
+      }
+    }
+    button{
+     margin-top: 100px;
+      width: 210px;
+      height: 40px;
+      background: #2db0f9;
+      color: #fff;
+      font: 20px/40px '微软雅黑';
+    }
+  }
+}
+.detail {
+  height: 960px;
+  .introduce {
+    width: 876px;
+    padding: 0 30px;
+    margin-top: 8px;
+    border: 1px solid #e5e5e5;
+    .bookintroduce,
+    .authoerintroduce {
+      height: 350px;
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+    dt {
+      font: bold 16px '微软雅黑';
+      margin-top: 30px;
+      padding-left: 9px;
+      border-left: 8px solid #3598db;
+    }
+    dd {
+      font: 14px/24px '微软雅黑';
+      text-indent: 2em;
+      padding: 25px 0;
+      height: 30px;
+    }
+    .coursecatelog{
+      height: 260px;
+      dt{
+        margin: 30px 0;
+        height: 18px;
+      }
+      dd{
+        height:36px;
+        padding: 0;
+      }
+    }
+  }
+  .related {
+    width: 240px;
+    height: 800px;
+    border: 1px solid #e5e5e5;
+    margin-top: 8px;
+    .relatetile {
+      height: 45px;
+      font: 16px/45px '微软雅黑';
+      border-bottom: 1px solid #e5e5e5;
+      padding-left: 20px;
+      background: #f6f6f6;
+      a {
+        margin-left: 90px;
+        color: #3598db;
+        font-size: 14px;
+      }
+    }
+    .relatedcourse {
+      li {
+        padding: 18px 16px;
+        width: 208px;
+        p {
+          font: 14px/24px '微软雅黑';
+        }
+      }
+    }
+  }
+}

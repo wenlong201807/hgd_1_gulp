@@ -1,0 +1,65 @@
+@import '../common.scss';
+.ind_hotMaterial_container {
+  height: 684px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  background-color: $container_bg1;
+  .wrap {
+    width: 1190px;
+    margin: 0 auto;
+    .title {
+      height: 55px;
+      position: relative;
+      &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 5px;
+        height: 18px;
+        width: 8px;
+        background-color: $block_bg1;
+      }
+      h2 {
+        float: left;
+        font-size: 18px;
+        margin-left: 18px;
+        color: $h2_color;
+      }
+      span {
+        float: right;
+        font-size: 13px;
+        padding-top: 5px;
+        color: $more_color;
+      }
+    }
+    .course_wrap {
+      box-sizing: border-box;
+      width: 1190px;
+      margin: 0 auto;
+      padding-left: 15px;
+
+      .course_item {
+        float: left;
+        width: 208px;
+        height: 260px;
+        margin-right: 32px;
+        &:nth-child(5n) {
+          margin-right: 0px;
+        }
+        .course_img {
+          display: block;
+          height: 180px;
+          width: 206px;
+          margin-bottom: 8px;
+          border: 1px solid $border_color;
+          border-radius: 3px;
+        }
+        h3 {
+          font-size: 15px;
+          color: $h2_color;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}

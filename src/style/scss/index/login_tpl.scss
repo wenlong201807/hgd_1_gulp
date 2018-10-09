@@ -1,0 +1,48 @@
+.login_form {
+  width: 600px;
+  margin: auto;
+}
+.login_logo {
+  width: 620px;
+}
+.login_line {
+  clear: both;
+  line-height: 30px;
+  padding-left: 30px;
+}
+.login_info {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 90px;
+  text-align: justify;
+  text-align-last: justify;
+}
+.login_inp {
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  padding: 0px 15px;
+  margin: 0px 10px 0px 15px;
+}
+.login_rad {
+  float: left;
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px 0px 15px;
+  cursor: pointer;
+}
+.flle {
+  float: left;
+}
+.pork_text {
+  float: left;
+  padding: 0px 0px 0px 0px;
+}
+.login_fail {
+  text-align: center;
+  color: red;
+}
+.login_btn {
+  margin-left: 50px;
+}

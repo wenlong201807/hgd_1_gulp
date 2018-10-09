@@ -1,0 +1,35 @@
+<ul class="choice_wrap ">
+  <!-- 模板使用位置****开始 -->
+  {{each rows as v i }}
+  <li class="choice_item ">
+    <div class="item_img_container ">
+      <img class="item_img " src="{{v.imgUrl}}" alt="图片不显示我显示 " title="{{v.title}}">
+    </div>
+    <div class="item_introduce ">
+      <h2>{{v.title}}</h2>
+      <h4 class="auhor ">{{v.author}}</h4>
+      <p class="item_p ">{{v.intro}}</p>
+      <div class="lastdata ">权限截止日期&nbsp;&nbsp;
+        <span class="time ">{{v.dpermissionTime}}
+        </span>
+      </div>
+      <button class="button detail ">查看详情</button> &nbsp;&nbsp;
+      <button getid="{{v.id}}" getimgUrl="{{v.imgUrl}}" gettitle="{{v.title}}" getauthor="{{v.author}}" getcontent="{{v.intro}}"
+        getdatatime="{{v.dpermissionTime}}" id="choice_to_set" class="button build ">使用该教材建立课程</button>
+    </div>
+    <!-- 有无权限绝对定位 -->
+    {{if v.permissionboolean}}
+    <div class="item_limit">
+      有权限
+    </div>
+    {{else}}
+    <div class="item_limit ">
+      无权限
+    </div>
+    {{/if}}
+
+  </li>
+  {{/each}}
+  <!-- 模板使用位置借宿***结束 -->
+
+</ul>

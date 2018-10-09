@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/lib/jquery-easyui-1.5.5.2/themes/bootstrap/easyui.css">
+  <link rel="stylesheet" href="/lib/jquery-easyui-1.5.5.2/themes/icon.css">
+  <link href="https://cdn.bootcss.com/bulma/0.7.1/css/bulma.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/simplePagination.css">
+  <link rel="stylesheet" href="/style/main.css">
+  <title>tea_build_course</title>
+</head>
+
+<body>
+  <div id="tea_build_model_bg">
+    <ul>
+      <li>查询结果</li>
+      <li>添加内容</li>
+      <li>修改内容</li>
+    </ul>
+    <ul>
+      <li class="tea_build_model_container" id="check_tpl">我是查询结果模态框容器在view页面中</li>
+      <li class="tea_build_model_container" id="add_tpl">我是添加添加模态框容器在view页面中</li>
+      <li class="tea_build_model_container" id="amend_tpl">我是修改修改模态框容器在view页面中</li>
+
+    </ul>
+
+
+  </div>
+
+
+
+
+  <!-- 以上为模态框，，正常情况下为隐藏状态**显示的时候为弹出层 -->
+  <header id="tea_build_course_header"> 我是头部模板位置</header>
+  <div id="tea_build_course_tab_num">我是tab标签导航数字</div>
+  <ul id="tea_build_course_main_wrap">
+    <li class="container_item" id="tea_build_choice_container">我是选择课程容器</li>
+    <li class="container_item" id="tea_build_set_container">我是设置课程容器</li>
+    <li class="container_item" id="tea_build_win_container">我是成功建立课程容器</li>
+  </ul>
+  <footer id="tea_build_course_footer">我是脚部模板位置</footer>
+  <script src="/lib/require.js " data-main="/js/controller/teacher/tea_build_courseController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<div class="tea_choice_tpl">
+  <div class="search_wrap">
+    <input type="text" placeholder="教材名称/ISBN/作者" id="search_box">
+    <i id="searchBtn" class="search_icon fa fa-search fa-2x"></i>
+    <ul id="select_box">
+      <li class="select_warp">
+        <span>全部分类</span>
+        <i class="select_icon fa fa-angle-down fa-2x"></i>
+        <!-- 全部分类里面的下拉隐藏框 -->
+        <ul class="choice_cate_id">
+          <li Cid="1" class="cate_item">教材名称</li>
+          <li Cid="2" class="cate_item">作者</li>
+          <li Cid="3" class="cate_item">有权限</li>
+          <li Cid="4" class="cate_item">无权限</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="info_introduce ">
+    <!-- 上下相同的 -->
+    <div class="course_num ">
+      共
+      <span class="total_num_two" id="total_num ">100</span>个教材
+    </div>
+    <div class="course_page_handler ">
+      <div id="nextBtn" class="flr page_com_btn btn_hou ">&gt; </div>
+      <div id="total_page" class="flr page_com_num total_page ">110</div>
+      <div class="flr page_com ">/</div>
+      <div id="curPageee" class="flr page_com_num cur_page ">1</div>
+      <div id="prevBtn" class="flr page_com_btn btn_qian ">&lt; </div>
+    </div>
+  </div>
+  <!-- 课程介绍开始 -->
+  <ul class="choice_wrap ">
+    <!-- 模板使用位置****开始 -->
+    {{each rows as v i }}
+    <li class="choice_item ">
+      <div class="item_img_container ">
+        <img class="item_img " src="{{v.imgUrl}}" alt="图片不显示我显示 " title="{{v.title}}">
+      </div>
+      <div class="item_introduce ">
+        <h2>{{v.title}}</h2>
+        <h4 class="auhor ">{{v.author}}</h4>
+        <p class="item_p ">{{v.intro}}</p>
+        <div class="lastdata ">权限截止日期&nbsp;&nbsp;
+          <span class="time ">{{v.dpermissionTime}}
+          </span>
+        </div>
+        <button class="button tea_choice_detail ">查看详情</button> &nbsp;&nbsp;
+        <button getid="{{v.id}}" getimgUrl="{{v.imgUrl}}" gettitle="{{v.title}}" getauthor="{{v.author}}" getcontent="{{v.intro}}"
+          getdatatime="{{v.dpermissionTime}}" id="choice_to_set" class="button build ">使用该教材建立课程</button>
+      </div>
+      <!-- 有无权限绝对定位 -->
+      {{if v.permissionboolean}}
+      <div class="item_limit">
+        有权限
+      </div>
+      {{else}}
+      <div class="item_limit ">
+        无权限
+      </div>
+      {{/if}}
+
+    </li>
+    {{/each}}
+    <!-- 模板使用位置借宿***结束 -->
+
+  </ul>
+  <div class="build_page_container ">
+    <!-- 上下相同的 -->
+    <div class="course_num ">
+      共
+      <span class="total_num_two" id="total_num ">100</span>个教材
+    </div>
+    <div class="course_page_list" id="build_page">
+      我是留给分页器的容器
+    </div>
+    <div class="page_selected">
+      <input type="text" class="page_sel_num" id="page_jump_num">
+      <button id="page_jump_btn" class="button">跳转至</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="ind_recommendedCourse_container">
+  <div class="wrap">
+    <div class="title">
+      <h2>推荐课程</h2>
+      <span>more...</span>
+    </div>
+    <ul class="course_wrap">
+      {{each courseList as v i}}
+      <li class="course_item">
+        <img class="course_img" src="{{v.imgUrl}}" Tid="{{v.id}}" alt="图片不显示的时候我会显示 " title="{{v.imgTitle}}***{{v.id}}">
+        <h3>{{v.title}}***{{v.id}}</h3>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+</div>

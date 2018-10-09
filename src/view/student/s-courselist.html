@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>课程列表</title>
+  <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/style//main.css">
+</head>
+
+<body>
+  <div id="index_header"></div>
+
+  <div id="index_nav"></div>
+
+  <div class="s-bookarea">
+    <!-- S子菜单导航 -->
+    <div class="s-booktitle">
+      <a href="#">首页</a> &gt;
+      <a href="javasript:;">教材</a> &gt;
+      <a href="javasript:;">一级分类名称</a> &gt;
+      <a href="#booklist">二级分类名称</a>
+    </div>
+    <!-- E子菜单导航 -->
+
+    <div class="s-booklist clearfix">
+      <!-- S左侧侧边栏下拉菜单 -->
+      <div class="dropdown-navigation">
+        <dl>
+          <dt>
+            <img src='/asset/imgs/add.png'>教材一级分类</dt>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+        </dl>
+        <dl>
+          <dt>
+            <img src='/asset/imgs/add.png'>教材一级分类</dt>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+        </dl>
+        <dl>
+          <dt>
+            <img src='/asset/imgs/add.png'>教材一级分类</dt>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+        </dl>
+        <dl>
+          <dt>
+            <img src='/asset/imgs/add.png'>教材一级分类</dt>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+          <dd>教材二级分类</dd>
+        </dl>
+      </div>
+      <!-- E左侧侧边栏下拉菜单 -->
+
+      <!-- s booktxt -->
+      <div class="booktxt">
+        <!-- S右侧顶部教材数据统计 -->
+        <div class="booktxttotal">
+          <div class="totalcount  fl">共
+            <span>100</span>个教材</div>
+          <div class="totalpage fr">
+            <a href="javascript:;" class="lt">&lt;</a>
+            <i>1</i>/
+            <span>10</span>
+            <a href="javascript:;" class="gt">&gt;</a>
+          </div>
+        </div>
+        <!-- E右侧顶部教材数据统计 -->
+        <ul class="s-coursetxtlist clearfix">
+        </ul>
+        <!-- <div class="page" id="page"></div> -->
+      </div>
+      <!-- E booktxt -->
+    </div>
+
+  </div>
+  <div id="footer"></div>
+  <script src="/lib/require.js" data-main='/js/controller/student/s-courselist.js'></script>
+</body>
+
+</html>

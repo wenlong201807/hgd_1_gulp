@@ -1,0 +1,31 @@
+{{each arr['rows'] as value}}
+<a href="javascript:;" class="fl imgfl">
+  <img src="{{value.imgUrl}}">
+</a>
+<div class="texmes fl">
+  <h3>课程名称课程名称课程名称</h3>
+  <h4>课程邀请码
+    <span>{{value.Invitationcode}}</span>
+  </h4>
+  <ul>
+    <li>
+      <span>任课老师
+        <a href="#">张三 东南大学</a>
+      </span>
+      <span>开课时间
+        <a href="#">{{value.curriculumtime}}</a>
+      </span>
+    </li>
+    <li>
+      <span>报名权限
+        <a href="#">所有用户</a>
+      </span>
+      <span>
+        学生人数
+        <a href="#">200</a>
+      </span>
+    </li>
+  </ul>
+  <button>加入课程</button>
+</div>
+{{/each}}

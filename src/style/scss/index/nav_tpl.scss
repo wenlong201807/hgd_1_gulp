@@ -1,0 +1,58 @@
+@import '../common.scss';
+.nav_tpl_container {
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  background-color: $more_color;
+  .nav_wrap {
+    height: 60px;
+    width: 1190px;
+    margin: 0 auto;
+    background-color: $more_color;
+    color: #fff;
+    // 主导航栏***蓝色背景的
+    .main_nav {
+      float: left;
+      .main_item {
+        float: left;
+        font-size: 17px;
+        margin-right: 10px;
+        a {
+          padding: 7px 20px;
+          border-radius: 2px;
+          cursor: pointer;
+          color: #fff;
+          &:hover {
+            background-color: $block_bg1;
+          }
+        }
+      }
+    }
+    // 附导航栏右侧部分***红色背景的
+    .aside_nav {
+      float: right;
+      height: 60px;
+      // width: 405px;
+      padding-left: 30px;
+      background-color: $container_bg3;
+      .aside_item {
+        float: right;
+        font-size: 17px;
+        margin-left: 10px;
+        a {
+          font-size: 13px;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .container_right_red {
+    width: calc(50% - 595px);
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: $container_bg3;
+  }
+}

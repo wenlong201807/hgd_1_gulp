@@ -1,0 +1,79 @@
+<div class="tea_set_tpl">
+  <div class="choiced_material_warp">
+    <div class="set_selected">选用的教材</div>
+    <button id="set_to_choice" class="button selected_btn">更换的教材</button>
+  </div>
+  <div class="set_wrap">
+    <div class="choice_item ">
+      <div class="item_img_container ">
+        <img id="new_item_img" class="item_img " src="/asset/imgs/course_map5.png" alt="图片不显示我显示 " title="123">
+      </div>
+      <div class="item_introduce ">
+        <h2 id="new_h2">数学解题泄天机</h2>
+        <h4 id="new_author" class="auhor ">杨飞，陈荣主</h4>
+        <p id="new_item_p" class="item_p ">本书分为3编.第1编解题心经，结合高中一线教师的解题心得和国内外解题名家的思想，提出数学解题活动中的操作规律和思维规律.第2编方法歌诀，归纳总结了高中数学典型的。</p>
+        <div class="lastdata ">权限截至日期&nbsp;&nbsp;
+          <span id="new_time" class="time ">0000.00.00</span>
+        </div>
+      </div>
+      <!-- 有无权限绝对定位 -->
+      <div id="new_item_limit" class="item_limit ">
+        有权限
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 表单部分***开始 -->
+<form class="clearfix" id="set_info_form" action="">
+  <div class="info_title">
+    基本信息设置
+  </div>
+  <ul class="info_content">
+    <li class="item_list">
+      <span class="item_key">课程名称</span>
+      <input value="暂时全部都是设置固定值，我在设置页签的模板中写的" class="class_title" type="text" name="title" id="">&nbsp;&nbsp;&nbsp;
+      <span>0</span>
+      <span>/</span>
+      <span>24</span>
+    </li>
+    <li class="item_list">
+      <span class="item_key">开课时间</span>
+      <input class="singer_celect" type="radio" checked name="open_class" value="设置" id="">&nbsp;&nbsp;&nbsp;设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="singer_celect" type="radio" name="open_class" value="不设置" id="">&nbsp;&nbsp;&nbsp;不设置
+    </li>
+    <li class="item_list list_bg">
+      &nbsp;&nbsp;&nbsp;&nbsp;开始时间&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="time" type="time" name="startTime" id=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止时间&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="time" type="time" name="endTime" id="">
+    </li>
+    <li class="item_list">
+      <span class="item_key">课程封面</span>
+      <!-- <button id="sky" class="sky button">浏览</button> -->
+      <input type="file" name="file" class="sky button" id="doc" value="阿斯顿发生" onchange="javascript:setImagePreview();">
+    </li>
+    <div id="localImag" class="class_img_wrap">
+      <img id="preview" class="class_img" src="/asset/imgs/course_map7.png" alt="tupian buxianshi woxianshi " title="asdfaasd">
+    </div>
+
+    <li class="item_list">
+      <span class="item_key"> 报名权限</span>
+      <input class="singer_celect" type="radio" checked name="limit" value="允许任何人加入课程" id="">&nbsp;&nbsp;&nbsp;&nbsp;允许任何人加入课程
+    </li>
+    <li class="item_list">
+      <span class="item_key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <input class="singer_celect" type="radio" name="limit" value="需要验证后才可以加入" id="">&nbsp;&nbsp;&nbsp;&nbsp;需要验证后才可以加入
+    </li>
+    <li class="item_list">
+      <span class="item_key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <input class="singer_celect" type="radio" name="limit" value="暂不开放报名" id="">&nbsp;&nbsp;&nbsp;&nbsp;暂不开放报名
+    </li>
+    <div class="sep_line"></div>
+    <li class="item_list">
+      <span class="item_key">学生自主退出课程</span>
+      <input class="singer_celect" checked type="radio" name="access" value="允许" id="">&nbsp;&nbsp;&nbsp;允许&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="singer_celect" type="radio" name="access" value="不允许" id="">&nbsp;&nbsp;&nbsp;不允许
+    </li>
+  </ul>
+
+</form>
+<button id="tea_build_set_submit" class="button set_submit">提交</button>

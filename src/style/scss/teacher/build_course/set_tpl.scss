@@ -1,0 +1,141 @@
+@import '../../common.scss';
+.tea_set_tpl {
+  width: 940px;
+  margin: 0 auto 10px;
+  border-radius: 3px;
+  border: 1px solid $border_color;
+  border-bottom: none;
+  background-color: $container_bg1;
+  .choiced_material_warp {
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 30px 0px 33px;
+    border-bottom: 1px solid $border_color;
+    .set_selected {
+      float: left;
+      font-size: 16px;
+      color: $h2_color;
+    }
+    .selected_btn {
+      float: right;
+      margin-top: 14px;
+    }
+  }
+  //模板样式复用容器**
+  .set_wrap {
+    // 模板位置开始
+    .choice_item {
+      @include choice_item;
+      // 有无权限绝对定位
+      .item_limit {
+        @include item_limit;
+      }
+      .item_img_container {
+        @include item_img_container;
+        .item_img {
+          height: 100%;
+        }
+      }
+      .item_introduce {
+        @include item_introduce;
+        h2 {
+          @include h2;
+        }
+        h4 {
+          @include h4;
+        }
+        .item_p {
+          letter-spacing: 1px;
+        }
+        .lastdata {
+          @include lastdata;
+          .time {
+            @include time;
+          }
+        }
+        .tea_choice_detail {
+          @include tea_choice_detail;
+        }
+        .build {
+          @include build;
+        }
+      }
+    }
+  }
+  //模板样式复用结束**
+}
+// 表单部分***开始
+#set_info_form {
+  width: 940px;
+  margin: 0 auto;
+  height: 767px;
+  margin-bottom: 32px;
+  border: 1px solid $border_color;
+  border-radius: 3px;
+  background-color: $container_bg1;
+  .info_title {
+    font-size: 15px;
+    padding: 20px 0px 20px 33px;
+    color: $h2_color;
+    border-bottom: 1px solid $border_color;
+  }
+  .info_content {
+    width: 936px;
+    .class_img_wrap {
+      height: 182px;
+      width: 208px;
+      margin-left: 118px;
+      margin-top: 10px;
+      border: 1px solid $border_color;
+      overflow: hidden;
+      .class_img {
+        width: 100%;
+      }
+    }
+    .sep_line {
+      width: 910px;
+      margin: 2px 0px 0px 15px;
+      height: 0.5px;
+      background-color: $border_color;
+    }
+    .item_list {
+      height: 60px;
+      line-height: 60px;
+      width: 600px;
+      margin-left: 30px;
+      .class_title {
+        display: inline-block;
+        height: 30px;
+        width: 418px;
+        padding: 3px 12px;
+      }
+      .singer_celect {
+        background-color: $block_bg1;
+        cursor: pointer;
+      }
+      .item_key {
+        display: inline-block;
+        margin: 5px 20px 5px 0px;
+        font-size: 16px;
+        color: $h2_color;
+      }
+      .sky {
+        margin-top: 22px;
+        cursor: pointer;
+        background-color: $block_bg1;
+      }
+      .time {
+        display: inline-block;
+        height: 30px;
+        width: 156px;
+        padding: 0px 12px;
+      }
+    }
+    .item_list.list_bg {
+      background-color: #f3fcff;
+    }
+  }
+}
+.set_submit {
+  @include submit_btn;
+}

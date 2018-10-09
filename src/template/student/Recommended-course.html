@@ -1,0 +1,15 @@
+<!-- 推荐课程 -->
+<dl>
+  <dt>
+    <h3>推荐课程</h3>
+    <a href="/view/student/s-courselist.html">more...</a>
+  </dt>
+  {{each arr['rows'] as val}}
+  <dd>
+    <a href="/view/student/s-coursedetail.html">
+      <img src="{{val.imgUrl}}">
+    </a>
+    <h4>{{val.title}}</h4>
+  </dd>
+  {{/each}}
+</dl>

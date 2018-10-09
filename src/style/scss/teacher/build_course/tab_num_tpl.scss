@@ -1,0 +1,51 @@
+@import '../../common.scss';
+.tea_tab_num_tpl {
+  height: 90px;
+  padding-top: 25px;
+  width: 800px;
+  margin: 0 auto;
+  .choice_wrap {
+    position: relative;
+    .choice_item {
+      float: left;
+      width: 80px;
+      position: relative;
+      z-index: 200;
+      margin: 0px 85px;
+      text-align: center;
+      .item_num {
+        height: 35px;
+        width: 35px;
+        margin: 0 auto;
+        behavior: url(/lib/PIE-1.0.0/PIE.htc);
+        border-radius: 50%;
+        line-height: 35px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        color: $container_bg1;
+        text-align: center;
+        background-color: $container_bg6;
+      }
+      .item_num.enter {
+        background-color: $container_bg4;
+      }
+      .item_title {
+        font-size: 18px;
+        color: $container_bg6;
+      }
+      .item_title.act {
+        color: $h2_color;
+      }
+    }
+    .sep_line {
+      position: absolute;
+      z-index: 100;
+      top: 18px;
+      left: 120px;
+      height: 2px;
+      width: 500px;
+      background-color: $border_color;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.magnify_tpl {
+  background: #ccc;
+  height: 800px;
+  width: 950px;
+  margin: 0 auto;
+
+  #magnify_tab {
+    position: relative;
+    width: 480px;
+    height: 600px;
+    // border: 1px solid #000;
+    margin: 10px auto;
+  }
+
+  .magnify_bd {
+    background: url(/asset/imgs/mid1.jpg);
+    width: 450px;
+    height: 450px;
+    margin-bottom: 10px;
+    transition: all 0.6s;
+    position: relative;
+    overflow: hidden;
+  }
+  .magnify_hd {
+    width: 450px;
+    height: 110px;
+    // border: 1px solid yellow;
+  }
+  .magnify_sm_img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2px;
+    border: 2px solid transparent;
+  }
+
+  .magnify_zoom {
+    width: 120px;
+    height: 154px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: -150px;
+    cursor: move;
+  }
+  /* 大图区域 */
+  #magnify_bigimg {
+    position: absolute;
+    top: 0;
+    left: 470px;
+    width: 450px;
+    height: 450px;
+    // border: 1px solid red;
+    background: url(/asset/imgs/big1.jpg) no-repeat 0 0;
+    /* background-size: 291.6%; */
+    display: none;
+  }
+}

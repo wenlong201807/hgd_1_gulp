@@ -1,0 +1,181 @@
+@import '../../common.scss';
+.tea_choice_tpl {
+  height: 920px;
+  width: 940px;
+  margin: 0 auto;
+  border: 1px solid $border_color;
+  .search_wrap {
+    height: 66px;
+    padding: 20px 35px 16px 37px;
+    border-bottom: 1px solid $border_color;
+    position: relative;
+    // 小图标绝对定位
+    .search_icon {
+      position: absolute;
+      top: 22px;
+      left: 238px;
+      cursor: pointer;
+      &:hover {
+        color: $block_bg1;
+      }
+    }
+    .select_icon {
+      position: absolute;
+      top: 23px;
+      right: 38px;
+      cursor: pointer;
+      &:hover {
+        color: $block_bg1;
+      }
+    }
+    #search_box {
+      float: left;
+      width: 230px;
+      height: 30px;
+      padding: 2px 25px 2px 12px;
+      border: 1px solid $border_color;
+    }
+    #select_box {
+      float: right;
+      @include select_box;
+      border: 1px solid $border_color;
+    }
+    .select_warp {
+      cursor: pointer;
+      &:hover .select_icon {
+        color: $container_bg4;
+      }
+      &:hover .choice_cate_id {
+        display: block;
+      }
+    }
+    // 全部分类之下的下拉选择框
+    .choice_cate_id {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 35px;
+      z-index: 500;
+      overflow: hidden;
+      .cate_item {
+        @include select_box;
+        margin-top: -1px;
+        background-color: $container_bg6;
+        cursor: pointer;
+        &:hover {
+          background-color: $container_bg4;
+        }
+      }
+    }
+  }
+  .info_introduce {
+    padding: 10px 35px 15px 37px;
+    border-bottom: 1px solid $border_color;
+    overflow: hidden;
+    line-height: 23px;
+    .course_num {
+      float: left;
+      width: 200px;
+      font-size: 16px;
+      #total_num {
+        padding: 0 4px;
+        color: $block_bg1;
+      }
+    }
+    .course_page_handler {
+      float: right;
+      width: 160px;
+      .flr {
+        float: right;
+        font-size: 13px;
+      }
+      .page_com_btn {
+        height: 23px;
+        width: 23px;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        background-color: $container_bg6;
+        &:hover {
+          background-color: $block_bg1;
+        }
+      }
+      .btn_qian {
+        margin-right: 13px;
+      }
+      .btn_hou {
+        margin-left: 13px;
+      }
+    }
+  }
+  // 模板位置开始
+  .choice_wrap {
+    width: 940px;
+    overflow: hidden;
+    height: 745px;
+    .choice_item {
+      @include choice_item;
+      // 有无权限绝对定位
+      .item_limit {
+        @include item_limit;
+      }
+      .item_img_container {
+        @include item_img_container;
+        .item_img {
+          height: 100%;
+        }
+      }
+      .item_introduce {
+        @include item_introduce;
+        h2 {
+          @include h2;
+        }
+        h4 {
+          @include h4;
+        }
+        .item_p {
+          letter-spacing: 1px;
+        }
+        .lastdata {
+          @include lastdata;
+          .time {
+            @include time;
+          }
+        }
+        .tea_choice_detail {
+          @include tea_choice_detail;
+        }
+        .build {
+          @include build;
+        }
+      }
+    }
+  }
+  // 分页器位置开始
+  .build_page_container {
+    padding: 16px 35px 5px 37px;
+    // background-color: red;
+
+    .course_num {
+      float: left;
+      width: 235px;
+      font-size: 16px;
+      #total_num {
+        padding: 0 4px;
+        color: $block_bg1;
+      }
+    }
+    .course_page_list {
+      float: left;
+      width: 515px;
+    }
+    .page_sel_num {
+      display: inline-block;
+      width: 40px;
+      height: 26px;
+      padding: 0px 5px;
+      margin-right: 15px;
+    }
+  }
+}

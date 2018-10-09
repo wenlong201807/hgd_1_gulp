@@ -1,0 +1,97 @@
+@import '../../common.scss';
+.tea_win_tpl {
+  width: 886px;
+  padding: 40px 26px 65px;
+  border-radius: 3px;
+  margin: 0 auto 10px;
+  border: 1px solid $border_color;
+  background-color: $container_bg1;
+  h1 {
+    font-size: 40px;
+    color: $h2_color;
+  }
+  .sep_line {
+    height: 0.5px;
+    margin: 15px 0px 28px 0px;
+    background-color: $border_color;
+  }
+  .visit,
+  h3 {
+    font-size: 14px;
+    color: $h3_color;
+    .visit_num {
+      display: inline-block;
+      font-size: 23px;
+      color: $container_bg3;
+    }
+  }
+}
+// 建立课程表单
+#tea_win_form {
+  height: 450px;
+  width: 885px;
+  margin: 0 auto;
+  border: 1px solid $border_color;
+  border-radius: 3px;
+  padding: 50px 30px 20px 30px;
+  margin-bottom: 20px;
+  background-color: $container_bg1;
+  .win_item {
+    height: 33px;
+    .item_title {
+      display: inline-block;
+      font-size: 14px;
+      padding-right: 17px;
+      color: $h2_color;
+    }
+    .set_to_win {
+      font-size: 14px;
+      padding-right: 17px;
+      color: $h3_color;
+    }
+  }
+  .sep_line {
+    width: 100%;
+    @include sep_line;
+  }
+  // 复用标签与样式开始
+  .win_item_wrap {
+    h2 {
+      @include h2;
+      margin-top: 10px;
+    }
+    .item_img_container {
+      float: left;
+      height: 184px;
+      width: 132px;
+      margin: 0px 35px 0px 25px;
+
+      .item_img {
+        height: 100%;
+      }
+    }
+    .item_introduce {
+      @include item_introduce;
+
+      h2 {
+        @include h2;
+        margin-top: 0px;
+      }
+      h4 {
+        @include h4;
+      }
+      .item_p {
+        @include item_p;
+      }
+      .lastdata {
+        @include lastdata;
+        .time {
+          @include time;
+        }
+      }
+    }
+  }
+}
+.win_submit {
+  @include submit_btn;
+}

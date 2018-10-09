@@ -1,0 +1,203 @@
+@import '../common.scss';
+.ind_header_container {
+  width: 100%;
+  background-color: $container_bg1;
+  .header_wrap {
+    height: 98px;
+    width: 1190px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: $container_bg1;
+    .le_fl {
+      float: left;
+    }
+    .logo {
+      width: 360px;
+      padding-top: 30px;
+      position: relative;
+      .logo_img {
+        margin-left: 8px;
+        width: 308px;
+      }
+      h1 {
+        position: absolute;
+        left: -99999px;
+      }
+    }
+    .search {
+      width: 470px;
+      padding-top: 35px;
+      position: relative;
+      .iab {
+        position: absolute;
+        top: 39px;
+        right: 10px;
+        color: #3e414a;
+      }
+      .sea_com {
+        float: left;
+        height: 34px;
+        line-height: 34px;
+        font-size: 13px;
+        position: relative;
+        color: $name_color;
+        border: 1px solid $border_color2;
+      }
+      .sea_choice {
+        width: 52px;
+        padding-left: 16px;
+        cursor: pointer;
+        background-color: $container_bg5;
+        .iab {
+          position: absolute;
+          top: 8px;
+          right: 9px;
+        }
+        a {
+          color: $name_color;
+        }
+        &:hover .choice_ab {
+          display: block;
+        }
+        .choice_ab {
+          display: none;
+          position: absolute;
+          z-index: 1500;
+          top: 34px;
+          left: -1px;
+          border: 1px solid $border_color2;
+          background-color: $container_bg1;
+          .choice_item {
+            width: 52px;
+            padding-left: 16px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 13px;
+            color: $name_color;
+            &:hover {
+              background-color: $container_bg5;
+            }
+          }
+        }
+      }
+      .sea_val {
+        width: 350px;
+        padding: 0px 36px 0px 10px;
+        margin-left: -1px;
+      }
+    }
+    // 登入信息
+    .info {
+      width: 360px;
+      .info_wrap {
+        .info_item {
+          float: right;
+          margin-left: 15px;
+          font-size: 16px;
+          position: relative;
+          a {
+            padding: 5px 20px 25px 10px;
+            color: $name_color;
+          }
+          .iab {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+          }
+        }
+        .msg {
+          margin-top: 38px;
+          margin-right: 15px;
+          span {
+            position: absolute;
+            top: -8px;
+            left: 17px;
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 50%;
+            color: $container_bg1;
+            cursor: pointer;
+            background-color: $container_bg3;
+          }
+        }
+        .pic {
+          margin-top: 32px;
+          position: relative;
+          .info_item_img {
+            height: 43px;
+            width: 43px;
+            border-radius: 50%;
+          }
+          .pic_cover {
+            position: absolute;
+            cursor: pointer;
+          }
+        }
+        .com_name {
+          margin-top: 40px;
+          position: relative;
+          &:hover .choice_wrap {
+            display: block;
+          }
+          .choice_wrap {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: -34px;
+            z-index: 500;
+            width: 110px;
+            border: 1px solid $border_color2;
+            cursor: pointer;
+            color: $name_color;
+            background-color: $container_bg1;
+            &:before {
+              content: ' ';
+              display: block;
+              width: 0;
+              height: 0;
+              position: absolute;
+              top: -25px;
+              right: 10%;
+              border: 12px solid red;
+              border-color: transparent;
+              border-bottom-color: $container_bg2;
+            }
+            &:after {
+              content: ' ';
+              display: block;
+              width: 0;
+              height: 0;
+              position: absolute;
+              top: -20px;
+              right: 12%;
+              border: 10px solid red;
+              border-color: transparent;
+              border-bottom-color: $container_bg1;
+            }
+            .choice_item {
+              padding: 10px 15px;
+              border-bottom: 1px solid $border_color2;
+              &:last-child {
+                border: none;
+              }
+              &:hover {
+                background-color: $container_bg2;
+              }
+            }
+          }
+        }
+      }
+      // **登入之前的*
+      .bef_info {
+        float: right;
+        font-size: 16px;
+        margin-top: 36px;
+        padding: 5px 10px;
+        color: $name_color;
+        background-color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!-- 教材列表 -->
+<ul>
+  {{each arr['rows'] as val}}
+  <li>
+
+    <a href="s-bookdetail.html" class="fl">
+      <img src="{{val.imgUrl}}">
+    </a>
+    <div class="texmes fl">
+      <h3>{{val.title}}</h3>
+      <div class="author">
+        <a href="javacript:;">{{val.author}}</a>著</div>
+      <div class="price">20.00 /年</div>
+      <p>{{val.intro }} {{val.id}}</p>
+      <div class="usericon">
+        <i>
+          <img src="/asset/imgs/usericon.png">
+        </i>{{val.price}}
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>

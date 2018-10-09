@@ -1,0 +1,26 @@
+<div class="nav_tpl_container">
+  <div class="nav_wrap">
+    <ul class="main_nav">
+      {{each left_list as val index}} {{if val.isText}}
+      <li class="main_item">
+        <a href="{{val.url}}">{{val.title}}</a>
+      </li>
+      {{else}}
+      <li class="main_item">{{val.title}} </li>
+      {{/if}} {{/each}}
+    </ul>
+    <ul class="aside_nav">
+      {{each right_list as val index}} {{if val.isText}}
+      <li class="aside_item">
+        <a href="{{val.url}}">{{val.title}}</a>
+      </li>
+      {{else}}
+      <li class="aside_item">
+        {{val.title}}
+      </li>
+      {{/if}} {{/each}}
+    </ul>
+    <!-- 最右侧部分多出来的红色区域使用相对定位，层级高于模块容器，低于其他 -->
+  </div>
+  <div class="container_right_red"></div>
+</div>

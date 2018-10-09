@@ -1,0 +1,15 @@
+<!-- 热门教材 -->
+<dl>
+    <dt>
+      <h3>热门教材</h3>
+      <a href="/view/student/s-booklist.html">more...</a>
+    </dt>
+    {{each arr['rows'] as value}}
+    <dd>
+      <a href="/view/student/s-bookdetail.html">
+        <img src="{{value.imgUrl}}">
+      </a>
+      <h4>{{value.title}}</h4>
+    </dd>
+    {{/each}}
+  </dl>

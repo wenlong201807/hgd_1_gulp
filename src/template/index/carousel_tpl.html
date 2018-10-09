@@ -1,0 +1,14 @@
+<div class="ind_carousel_container">
+  <div class="carousel-content">
+    <ul class="carousel">
+      {{each carouselList as v i}}
+      <li>
+        <a href="javascript:void(0);">
+          <img src="{{v.img}}" alt="我是放图片的位置" title="{{v.introduce}}**{{v.id}}">
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+    <ul class="img-index"></ul>
+  </div>
+</div>

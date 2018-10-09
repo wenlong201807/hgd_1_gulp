@@ -1,0 +1,51 @@
+<form class="login_form" id="login_form" method="" action="">
+  <fieldset>
+    <legend>
+      <img class="login_logo" src="/asset/imgs/logo.png" alt="图片不显示，我显示" title="我是哈工大"> </legend>
+    <p class="login_line">
+      <label class="login_info" for="username">用户名</label>
+      <input class="login_inp" id="username" name="username" type="text" value="胡伟">
+    </p>
+    <p class="login_line">
+      <label class="login_info" for="password">密码</label>
+      <input class="login_inp" id="password" name="password" type="password" value="123456">
+    </p>
+    <!-- <p class="login_line">
+      <label class="login_info" for="confirm_password">确认密码</label>
+      <input class="login_inp" id="confirm_password" name="confirm_password" type="password" value="123456">
+    </p> -->
+    <p class="login_line">
+      <label class="login_info flle" for="pork">
+        端口选择
+      </label>
+      <input class="login_rad" name="pork" type="radio" value="2">
+      <span class="pork_text">教师端</span>
+      <input class="login_rad" name="pork" type="radio" value="1">
+      <span class="pork_text ">学生端</span>
+      <input class="login_rad " name="pork" type="radio" value="管理员" disabled>
+      <span class="pork_text">管理员</span>
+
+    </p>
+
+
+
+    <!-- <p class="login_line">
+      <label class="login_info" for="jiaoyan">校验码</label>
+      <input class="login_inp" id="jiaoyan" name="jiaoyan" type="text">
+    </p>
+    <p class="login_line">
+      <label class="login_info" for="confirm_jiaoyan">输入校验码</label>
+      <input class="login_inp" id="confirm_jiaoyan" name="confirm_jiaoyan" type="text">
+    </p> -->
+
+    <p class="login_line">
+      <input class="button login_btn submit" type="submit" value="登录">
+      <input class="button login_btn login" type="button" value="注册">
+    </p>
+
+    <div class="login_fail" id="login_fail">
+      <!-- 我是登入失败后，后台返回的提示信息位置,若是成功，则页面跳转 -->
+    </div>
+
+  </fieldset>
+</form>

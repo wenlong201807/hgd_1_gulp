@@ -1,0 +1,143 @@
+/**
+
+style/scss/index/***.scss中使用的**
+* 引用时的路径方式只能时相对路径的写法
+* @import '../common.scss';**1bbc9c 666666
+*/
+$h2_color: #1a1a1a;
+$h3_color: #666;
+$li_color: #747474;
+$title_color: #4d4d4d;
+$name_color: #6e6e6e;
+$border_color: #d9dada;
+$border_color2: #e8e8e8;
+$border_color3: #e3e3e3;
+$more_color: #3598db;
+$block_bg1: #2db0f9;
+$container_bg1: #fff;
+$container_bg2: #ccc;
+$container_bg3: #e7594d;
+$container_bg4: #1bbc9c;
+$container_bg5: #fbfbfb;
+$container_bg6: #999999;
+$wraper: 1190px;
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: ''; //设置内容为空
+  height: 0; //高度为0
+  line-height: 0; //行高为0
+  display: block; //将文本转为块级元素
+  visibility: hidden; //将元素隐藏
+  clear: both; //清除浮动
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+//region 教师端**建立课程***选择课程与设置课程中的公共样式***
+@mixin choice_item {
+  padding: 30px 43px 32px 70px;
+  border-bottom: 1px solid $border_color;
+  position: relative;
+  overflow: hidden;
+}
+@mixin item_limit {
+  // 有无权限绝对定位
+  position: absolute;
+  top: 13px;
+  left: -27px;
+  height: 30px;
+  line-height: 30px;
+  width: 110px;
+  text-align: center;
+  transform: rotate(-45deg);
+  color: #fff;
+  background-color: $container_bg4;
+}
+
+@mixin item_img_container {
+  float: left;
+  height: 184px;
+  width: 138px;
+  margin-right: 57px;
+}
+
+@mixin item_img {
+  height: 100%;
+}
+
+@mixin item_introduce {
+  float: left;
+  height: 184px;
+  width: 630px;
+  font-size: 14px;
+  color: $name_color;
+}
+
+@mixin h2 {
+  font-size: 18px;
+  color: $h2_color;
+  margin-bottom: 17px;
+}
+
+@mixin h4 {
+  font-size: 17px;
+  color: $h3_color;
+  margin-bottom: 7px;
+}
+
+@mixin lastdata {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+@mixin item_p {
+  letter-spacing: 1px;
+}
+
+@mixin tea_choice_detail {
+  background-color: $block_bg1;
+  color: #fff;
+}
+
+@mixin build {
+  background-color: $container_bg4;
+  color: #fff;
+}
+
+@mixin time {
+  color: $block_bg1;
+}
+
+//endregion 教师端**建立课程***选择课程与设置课程中的公共样式***结束
+// 教师端，建立课程，公共样式
+@mixin sep_line {
+  // margin: 2px 0px 0px 15px;
+  height: 0.5px;
+  background-color: $border_color;
+}
+
+@mixin submit_btn {
+  display: block;
+  height: 40px;
+  width: 196px;
+  margin: 0 auto 64px;
+  font-size: 20px;
+  color: $container_bg1;
+  background-color: $container_bg4;
+}
+
+@mixin select_box {
+  width: 192px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 25px 0px 14px;
+}

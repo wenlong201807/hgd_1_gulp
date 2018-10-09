@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+  <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <input type="file" name="" id="watch_img" value="">
+  <img src="" alt="" id="pic">
+  <input type="button" value="上传" class="uploadImg">
+  </div>
+  <script>
+    // ajax发送图片
+    $('.uploadImg').on("click", function () {
+      var formData = new FormData();
+      formData.append('file', $('#watch_img')[0].files[0]);
+      $.ajax({
+        url: "http://127.0.0.1:3000/upload",
+        type: 'post',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (msg) {
+          alert(msg);
+          $('#pic').attr('src', msg)
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

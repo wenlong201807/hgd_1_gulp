@@ -1,0 +1,161 @@
+@import '../../common.scss';
+.tea_my_teach_open_class_container {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $container_bg5;
+  // 按钮部分开始
+  .nav_wrap {
+    box-sizing: border-box;
+    height: 90px;
+    padding-top: 30px;
+    overflow: hidden;
+    .nav_com {
+      font-size: 15px;
+    }
+    .nav_fl {
+      float: left;
+      border: 1px solid $border_color2;
+      border-radius: 3px;
+      overflow: hidden;
+      .nav_fl_item {
+        padding: 10px 30px;
+        float: left;
+        cursor: pointer;
+        color: $h3_color;
+      }
+      .nav_fl_item.active {
+        background-color: $block_bg1;
+        color: $container_bg1;
+      }
+    }
+    .nav_fr {
+      float: right;
+      padding: 10px 22px;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: $container_bg4;
+      color: $container_bg1;
+    }
+  }
+  // 中间内容部分开始
+  .content_wrap {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: $container_bg1;
+    .content_wrap_ab {
+      position: absolute;
+      top: 7px;
+      left: -20px;
+      height: 25px;
+      line-height: 25px;
+      width: 80px;
+      text-align: center;
+      font-size: 13px;
+      transform: rotate(-45deg);
+      color: $container_bg1;
+      background-color: red;
+    }
+    .content_item {
+      box-sizing: border-box;
+      border: 1px solid $border_color2;
+      padding: 0px 30px 20px 20px;
+      border-radius: 3px;
+      overflow: hidden;
+      .content_item_img {
+        display: block;
+        float: left;
+        width: 238px;
+        height: 209px;
+        margin-top: 20px;
+        margin-right: 35px;
+        border: 1px solid $border_color2;
+      }
+      .content_item_right {
+        float: left;
+        padding-top: 15px;
+        h2 {
+          font-size: 20px;
+          color: $h2_color;
+        }
+        .content_item_list {
+          overflow: hidden;
+          padding-top: 20px;
+          font-size: 15px;
+          color: $li_color;
+          .content_item_detail {
+            box-sizing: border-box;
+            float: left;
+            width: 208px;
+            height: 40px;
+            margin-right: 10px;
+            // background-color: yellow;
+            &:last-child {
+              margin-right: 0px;
+              padding-right: 10px;
+              text-align: right;
+            }
+          }
+        }
+        .sep_line {
+          height: 3px;
+          width: 100%;
+          background-color: $border_color3;
+        }
+        // 开课**课程管理***开始
+        .kaike_guanli_wrap {
+          margin-top: 18px;
+          overflow: hidden;
+          // background-color: green;
+          .item {
+            height: 20 px;
+            line-height: 20 px;
+            margin-bottom: 9px;
+            .item_zuo {
+              display: inline-block;
+              width: 50px;
+              margin-right: 10px;
+              padding: 3px 10px;
+              border-radius: 4px;
+              text-align: justify;
+              text-align-last: justify;
+              color: $container_bg1;
+              cursor: pointer;
+            }
+            .zuo_bg1 {
+              background-color: #f7931e;
+            }
+            .zuo_bg2 {
+              background-color: #1bbc9c;
+            }
+            .zuo_bg3 {
+              background-color: #3598db;
+            }
+            .zuo_bg4 {
+              background-color: #e7594d;
+            }
+          }
+        }
+        // 复制课程与结束课程*
+        .kaike_wancheng {
+          padding-top: 93px;
+        }
+      }
+    }
+  }
+  // 分页开始
+  .page_wrap {
+    height: 80px;
+    font-size: 14px;
+    color: $h2_color;
+    background-color: yellow;
+    #page_le_fl {
+      float: left;
+    }
+    #page_ri_fl {
+      float: right;
+    }
+  }
+}
